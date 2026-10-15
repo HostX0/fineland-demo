@@ -1,0 +1,25 @@
+name: Request the full system
+description: Ask DevsHub about a clinic deployment, customization, or product walkthrough.
+title: "Product enquiry: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in Fineland by DevsHub. This enquiry is public. Please describe your requirements without including patient records, assessment results, passwords, or private contact details.
+  - type: dropdown
+    id: interest
+    attributes:
+      label: What would you like to discuss?
+      options:
+        - Full clinic system
+        - Customization
+        - Product walkthrough
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Your workflow and requirements
+      description: Describe the features or workflow you would like to discuss.
+    validations:
+      required: true

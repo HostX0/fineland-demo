@@ -1,0 +1,13 @@
+{
+  "name": "fineland-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fineland by DevsHub: a complete browser-only adaptive assessment demonstration",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

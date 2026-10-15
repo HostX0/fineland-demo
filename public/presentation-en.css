@@ -1,0 +1,40 @@
+/* Isolated English presentation layout. */
+@font-face {
+  font-family: 'Cairo Latin';
+  src: url('fonts/cairo-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+}
+html, body, button, input, select, textarea {
+  font-family: 'Cairo Latin', 'Inter', 'Segoe UI', Arial, sans-serif !important;
+}
+html, body, #app, #modal-root, dialog { direction: ltr !important; }
+body, input, select, textarea, table { text-align: left; }
+.sidebar { border-left: 0; border-right: 1px solid var(--line); }
+.nav-item, .subnav, .field label, .page-head, .section-head, .question, .notice,
+.report-card, .report-grid, .auth-card, .account-dialog, .modal { text-align: left; }
+.search input { padding-left: 42px; padding-right: 12px; }
+.search svg { left: 13px; right: auto; }
+th, td { text-align: left; }
+.route-warning, .protocol-notice { border-right: 0; border-left: 3px solid #bdccec; }
+@media print { html, body, #report { direction: ltr !important; } }
+.public-demo-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border: 1px solid #ddd4ed;
+  border-radius: 16px;
+  background: linear-gradient(110deg, #f4effb, #eef5fc);
+}
+.public-demo-bar strong { color: #573b83; }
+.public-demo-bar p { margin: 4px 0 0; color: #62677a; font-size: 13px; }
+.public-demo-bar nav { display: flex; flex-wrap: wrap; gap: 8px; }
+.public-demo-bar a { text-decoration: none; }
+@media (max-width: 760px) {
+  .public-demo-bar { align-items: flex-start; flex-direction: column; }
+}
+@media print { .public-demo-bar { display: none !important; } }

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#624795" />
+    <meta name="description" content="Explore Fineland by DevsHub: a complete interactive demo for adaptive assessment, scoring, follow-up and reports. Contact the owner to request the full clinic system." />
+    <meta property="og:title" content="Fineland by DevsHub | Interactive demo" />
+    <meta property="og:description" content="Try the complete assessment workflow with fictional cases. Request the full clinic system from DevsHub." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fineland-demo.vercel.app/" />
+    <link rel="canonical" href="https://fineland-demo.vercel.app/" />
+    <title>Fineland by DevsHub | Interactive demo</title>
+    <link rel="icon" type="image/webp" href="assets/clinic-logo.webp" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="adapter.css" />
+    <link rel="stylesheet" href="presentation-en.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div id="app"></div>
+    <div id="modal-root"></div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <input
+      id="import-file"
+      class="visually-hidden"
+      type="file"
+      accept="application/json,.json"
+      tabindex="-1"
+    />
+    <script src="runtime-config.js"></script>
+    <script src="logic.js"></script>
+    <script src="presentation-en.js"></script>
+    <script src="presentation-fixtures.js"></script>
+    <script src="presentation-runtime.js"></script>
+  </body>
+</html>
