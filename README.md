@@ -27,6 +27,22 @@ The demo reflects scoring behavior implemented for this experience. That does no
 
 For a guided walkthrough, see the [User Guide](docs/USER-GUIDE.md). For the product overview, see [Product](docs/PRODUCT.md). Read the [Privacy and demo data](docs/PRIVACY.md) page before entering information.
 
+## Product screens
+
+The screenshots below show fictional cases in the public demonstration.
+
+### Patient workspace
+
+Keep sample records, drafts, and saved results together. The demo includes direct links to request the full system and explore the documentation.
+
+![Fineland demonstration workspace](docs/images/workspace.jpg)
+
+### Clear results at a glance
+
+The visual summary presents domain scores and the ABC together, with Motor shown separately.
+
+![Domain and composite results for a fictional demonstration case](docs/images/results.jpg)
+
 ## Why this workflow
 
 The requesting clinician estimated 45–60 minutes or more for manual scoring, table lookup, and report preparation, compared with about 10 minutes or less using the system. These are **client-reported estimates**, not independently measured or guaranteed results. Fineland brings those steps together to reduce routine calculation and transcription work and free time for clinical care.
