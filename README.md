@@ -1,73 +1,92 @@
 # Fineland by DevsHub
 
-**A clear, focused demonstration of adaptive-behavior assessment workflow.** Fineland brings interview entry, scoring, follow-up comparison, and report preparation into one interactive clinic-style experience.
+**From interview to insight, in one clear assessment workspace.** Fineland brings case intake, adaptive-behavior assessment, scoring, follow-up comparison, and printable reports into one guided experience.
 
-[Open the live demo](https://fineland-demo.vercel.app/) · [Request the full clinic system](https://github.com/HostX0/fineland-demo/issues/new?template=product-enquiry.yml) · [Meet the owner](https://github.com/HostX0)
+[**Explore the live preview →**](https://fineland-demo.vercel.app/) · [**Contact DevsHub for the full system →**](https://github.com/HostX0)
 
-> **Demonstration only:** Fineland is a frontend-only demo using fictional patient records and demonstration item wording. Do not enter real patient information or use its results to make clinical decisions.
+> **Frontend preview only.** This public demo uses fictional cases and demonstration item wording. Changes stay in your browser; the preview has no connection to the live clinic system or its records. The complete clinic system is available by contacting the [repository owner](https://github.com/HostX0). Use fictional information only; demo results are not for clinical decisions.
 
-## What you can explore
+## See the experience
 
-- Create a case and record intake details, including date of birth and interview date, to calculate chronological age.
-- Enter item responses using the 0/1/2 scale or raw values, then review domain and adaptive behavior composite results.
-- Explore basal and ceiling handling, interview routing, strengths and pairwise comparisons, and separate maladaptive and critical-item views.
-- Compare follow-up assessments, search or archive cases, and prepare a printable report.
-- Set clinic details and add a logo to see how clinic identity appears in the workflow and report.
-
-Fineland demonstrates a workflow built around the **Vineland Adaptive Behavior Scales, Third Edition (Vineland-3), Comprehensive Interview Form**. It includes v-scale and domain scoring and the Adaptive Behavior Composite (ABC); the ABC excludes Motor. The reference interview route and a clinic age-cap workflow are shown as distinct concepts. Results include equivalent age and Growth Scale Value (GSV), not a growth rate.
-
-The demo reflects scoring behavior implemented for this experience. That does not establish clinical validation, authorization to administer the instrument, or suitability for care decisions. Vineland-3 is a Pearson instrument; Fineland is an independent demonstration and is not endorsed by Pearson. See [Assessment and scoring notes](docs/ASSESSMENT.md).
-
-## Start exploring
-
-1. Open the [live demo](https://fineland-demo.vercel.app/).
-2. Create a fictional case and follow the intake and interview flow.
-3. Review scoring, follow-up comparison, and report options.
-4. Use the demo's sample content only; browser data stays in local browser storage.
-
-For a guided walkthrough, see the [User Guide](docs/USER-GUIDE.md). For the product overview, see [Product](docs/PRODUCT.md). Read the [Privacy and demo data](docs/PRIVACY.md) page before entering information.
-
-## Product screens
-
-The screenshots below show fictional cases in the public demonstration.
+Actual screens from the interactive preview. All people and assessment records shown below are fictional.
 
 ### Patient workspace
 
-Keep sample records, drafts, and saved results together. The demo includes direct links to request the full system and explore the documentation.
+Find a case quickly, resume an unfinished interview, and keep each person's visits and reports together.
 
-![Fineland demonstration workspace](docs/images/workspace.jpg)
+![Fineland patient workspace with fictional records and draft progress](docs/screenshots/patient-workspace.jpg)
 
-### Clear results at a glance
+### Guided assessment intake
 
-The visual summary presents domain scores and the ABC together, with Motor shown separately.
+Record the patient, respondent, and visit details. Chronological age is calculated from the dates, and eligible sections are selected for the assessment.
 
-![Domain and composite results for a fictional demonstration case](docs/images/results.jpg)
+![Fineland assessment intake with fictional patient details and calculated age](docs/screenshots/assessment-intake.jpg)
 
-## Why this workflow
+### Focused interview entry
 
-The requesting clinician estimated 45–60 minutes or more for manual scoring, table lookup, and report preparation, compared with about 10 minutes or less using the system. These are **client-reported estimates**, not independently measured or guaranteed results. Fineland brings those steps together to reduce routine calculation and transcription work and free time for clinical care.
+Move between subdomains, enter 0/1/2 responses, flag estimated answers, and follow visible routing and basal guidance. Progress makes unfinished work easy to identify.
 
-## Request the full system
+![Fineland guided interview with response controls and section progress](docs/screenshots/guided-interview.jpg)
 
-This is a complete interactive demonstration. To request the full clinic system or a tailored deployment, [open a product enquiry](https://github.com/HostX0/fineland-demo/issues/new?template=product-enquiry.yml) for **Abdulazeez A. Noaman / DevsHub**, or visit the [owner's profile](https://github.com/HostX0). Enquiries are public; describe your requirements without patient information or private contact details.
+### Results at a glance
 
-## Run the demo locally
+Review domain and composite scores in a visual summary, with maladaptive behavior shown separately. Motor Skills is displayed separately and is excluded from the Adaptive Behavior Composite.
 
-With Node.js 22 or newer installed, open a terminal in your downloaded copy and run:
+![Fineland visual score summary and separate maladaptive behavior results for a fictional case](docs/screenshots/visual-results.jpg)
 
-```sh
-npm start
-```
+### Follow-up over time
 
-Then open [the local demo](http://127.0.0.1:4173). No API keys, account, database, or external packages are needed. The hosted version is published automatically from this demonstration repository.
+Open the patient's assessment history and compare two visits side by side, including raw scores and Growth Scale Values (GSV).
 
-## Learn more
+![Fineland fictional patient history and follow-up comparison](docs/screenshots/follow-up-comparison.jpg)
 
-- [Product overview](docs/PRODUCT.md)
-- [User guide](docs/USER-GUIDE.md)
-- [Assessment and scoring notes](docs/ASSESSMENT.md)
-- [Privacy and demo data](docs/PRIVACY.md)
+### Reports ready to review and print
 
-## Instrument reference
+Keep the visit details, scores, and analysis in a readable report. Print it or save it as a PDF through the browser.
 
-The referenced instrument is Vineland-3, published by Pearson. Public reference materials are available in the [official Pearson manual appendices (B–E)](https://www.pearsonassessments.com/content/dam/school/global/clinical/us/assets/vineland-3/vineland-3-manual-appendices-b-e.pdf). This demo does not reproduce licensed item wording or reference tables in its documentation.
+![Fineland saved assessment report with print and PDF controls](docs/screenshots/printable-report.jpg)
+
+## The problem Fineland addresses
+
+An adaptive-behavior assessment can involve paper forms, manual calculations, scoring references, and a separate report document. Repeating those steps for later visits creates extra transcription work and makes comparisons harder to organize.
+
+Fineland connects the workflow so the clinic team can focus on reviewing the assessment and discussing the next step with the family.
+
+## What you can explore
+
+| Area | Features in the preview |
+| --- | --- |
+| **Case management** | Searchable records, separate visits, saved drafts, assessment history, and archive. |
+| **Intake** | Patient and respondent details, interview date, chronological age, examiner details, and optional phone number. |
+| **Response entry** | Item responses or raw-score entry, estimated-response flags, section navigation, and progress tracking. |
+| **Assessment routing** | A reference interview route and a separate clinic age-cap method, with basal and ceiling handling. |
+| **Scoring and analysis** | Subdomain v-scales, domain scores, Adaptive Behavior Composite, age equivalents, GSV, confidence intervals, strengths, weaknesses, and pairwise comparisons. |
+| **Additional sections** | Motor Skills when age-eligible, maladaptive behavior, and positive critical-item notes in separate areas. |
+| **Follow-up** | Compare assessments from two visits while keeping each saved result with its own visit. |
+| **Reporting** | A structured assessment report, visual results, clinic identity and logo settings, and browser print / save as PDF. |
+| **Try and reset** | Example responses and fictional saved cases help you explore; reset restores the sample workspace. |
+
+GSV change is a numeric difference between visits. It is not a growth rate and does not, by itself, establish clinical change.
+
+## Try the complete journey
+
+1. Open the [live preview](https://fineland-demo.vercel.app/).
+2. Explore a fictional patient record and compare its saved visits.
+3. Continue the sample draft or start a new assessment with invented details.
+4. Enter responses, or use **Fill example responses** to explore the review flow.
+5. Review the results and the printable report.
+6. Use **Reset demo data** to restore the original examples whenever needed.
+
+Demo information is saved only in the current browser profile. It does not sync between devices or provide a clinical account. Clearing the demo's site data removes your local examples.
+
+## Assessment context
+
+The demonstration presents a workflow based on the **Vineland Adaptive Behavior Scales, Third Edition (Vineland-3), Comprehensive Interview Form**. The reference interview route and the separate clinic age-cap method are distinguished throughout the experience; their results are not interchangeable.
+
+Vineland-3 is a Pearson instrument. Fineland is an independent demonstration and is not endorsed by Pearson. Demonstration scoring does not establish clinical validation or authorization to administer the instrument. The preview uses demonstration item wording rather than licensed interview questions.
+
+## Request the full clinic system
+
+This repository shares the **interactive frontend preview**. To obtain the complete system or discuss a tailored clinic deployment, contact **DevsHub / Abdulazeez A. Noaman** through the [owner's GitHub profile](https://github.com/HostX0).
+
+[**Open Fineland on Vercel**](https://fineland-demo.vercel.app/)
